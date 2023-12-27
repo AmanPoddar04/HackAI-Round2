@@ -37,16 +37,16 @@ async def answer(ctx: Context, sender: str, msg: Query):
     # print(palm_model)
     answer = palm.generate_text(
         model=palm_model,
-        prompt=f"Expand this answer based on the question with a proper sentence. question: {msg.question} answer: {msg.context}. Give a proper statement with the answer. Also provide more information regarding the question and write a short paragraph for the answer.",
+        prompt=f"Expand this answer based on the question with a proper sentence. question: {msg.question} answer: {msg.context}. Give a proper statement with the answer. Also provide more information regarding the question and give a proper paragraph for the answer. Try to give answer and relate it to the theme of 'the mystical realm'.",
         temperature=0,
         max_output_tokens=800,
     )
-    print(answer.result)
+    ctx.logger.info(answer.result)
     text = f"""
     Question: {msg.question}
     Answer: {answer.result}
     """
-    print("What else can I help you with?")
+    ctx.logger.info("What other mystical assistance I can provide you with?")
     ques = input()
     await ctx.send(
         sender,

@@ -80,7 +80,8 @@ answerer_agent_address = answerer_agent.address
 async def start(ctx: Context):
     nlp = await init_pipeline()
     print("Welcome to Hitachi Customer Support")
-    print("Hi, How can I help you?")
+    print("This enchanted helpdesk will help you with any queries you might have regarding our platform.")
+    print("What magical aid do you require today?")
     query = input()
     document = get_document(file_path=file_path)
     palm_model = await init_palm()
@@ -104,7 +105,7 @@ async def start(ctx: Context):
 
 @generator_protocol.on_message(model=Query, replies=Query)
 async def generate(ctx: Context, sender: str, msg: Query):
-    ctx.logger.info(msg.question)
+    # ctx.logger.info(msg.question)
     update_document(msg.previous_response)
     nlp = await init_pipeline()
     document = get_document(file_path=file_path)
