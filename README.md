@@ -1,6 +1,18 @@
-# Conversational Agents with LLM Integration
+# Automated Customer Support Agent
 
-This project implements a conversational system using agents. It takes user inputs, processes them through a Language Model (LLM), and provides responses through another agent. The goal is to create a responsive and intelligent interaction system.
+We were required to develop an agent  that can handle customer inquiries for a business. This agent should use natural language processing to understand and respond to customer queries, escalate issues when necessary, and learn from interactions to improve over time.
+
+# Approach
+
+To address the problem statement, we employed the RAG (Retrieval Augmented
+Generation) and PALM API provided by Google to enhance the response gener-
+ation process. By leveraging these APIs and following the methodology outlined
+in the GenRead research paper, we implemented a multi-step approach. First,
+the ’generator’ agent creates potential responses to a query. Subsequently, the
+RAG algorithm is applied to these responses to determine the optimal output
+based on the Hitachi information document.
+```src/document.txt```
+We generated some data for Hitachi company service. This document can be replaced with any other customer service info to perform Retrieval Augmented Generation.
 
 ## Getting Started
 
