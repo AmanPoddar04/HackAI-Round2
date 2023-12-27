@@ -2,6 +2,8 @@
 
 We were required to develop an agent  that can handle customer inquiries for a business. This agent should use natural language processing to understand and respond to customer queries, escalate issues when necessary, and learn from interactions to improve over time.
 
+## Team Id : Hack-230494
+
 # Approach
 
 To address the problem statement, we employed the RAG (Retrieval Augmented
@@ -13,6 +15,11 @@ RAG algorithm is applied to these responses to determine the optimal output
 based on the Hitachi information document.
 ```src/document.txt```
 We generated some data for Hitachi company service. This document can be replaced with any other customer service info to perform Retrieval Augmented Generation.
+
+Efforts have been made to relate the solution to the theme of the Techfest "The Mystical Realm".
+
+We have also provided a Technical Report which covers our solutions detail approach.
+
 
 ## Getting Started
 
