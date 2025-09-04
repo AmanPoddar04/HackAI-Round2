@@ -1,4 +1,4 @@
-Name: Hitachi, Ltd.
+Name: Hitachi, Private Ltd.
 Founded: Hitachi was founded in 1910.
 CEO: Toshiaki Higashihara
 Industry: Hitachi is a diversified conglomerate with business operations spanning various sectors, including information technology, electronics, power systems, industrial systems, and more.
@@ -16,7 +16,7 @@ AIR CONDITIONER
 WARRANTY POLICIES:
 Models Manufactured of 2018/2019/2020 (Inverter Models (3/4/5 Star)):
 1. Standard Warranty Applicable for the 1st Year
-10 years Compressor Warranty
+10/20 years Compressor Warranty
 i. Compressor Coverage: Free of cost
 ii. Refrigerant Charge: free of cost
 iii. Labour/Visit: Free of cost
